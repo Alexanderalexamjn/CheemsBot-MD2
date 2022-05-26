@@ -142,21 +142,21 @@ async function startXeonBotInc() {
         let nama = await XeonBotInc.getName(num)
 memb = metadata.participants.length
 
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/6505210c1e0bd19e849ab.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 
-Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/6505210c1e0bd19e849ab.jpg&amegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     XeonBotInc.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-🐶✑ Hi👋 @${num.split("@")[0]},
-🐶✑ Welcome To ${metadata.subject}
+🎈✑ 𝐇𝐞𝐥𝐥𝐨 🤗 @${num.split("@")[0]},
+🎈✑ 𝚠𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 ${metadata.subject}
 
-🐶✑ Description: ${metadata.desc}
+🎈✑ 𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗: ${metadata.desc}
 
-🐶✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+🎈✑ 𝙷𝚎𝚕𝚕𝚘 𝚑𝚘𝚠 𝚊𝚛𝚎 𝚢𝚘𝚞 😊!!`} )
                 } else if (anu.action == 'remove') {
-                    XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `🐶✑ @${num.split("@")[0]} Left ${metadata.subject}
+                    XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `🎈✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-🐶✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+🎈✑ 𝙳𝚘𝚗𝚝 𝚌𝚊𝚖𝚎 𝚋𝚊𝚌𝚔 𝚝𝚘 𝚑𝚎𝚛𝚎 👋` })
                 }
             }
         } catch (err) {
